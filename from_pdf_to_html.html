@@ -1,10 +1,141 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Task 1 - IT Knights Club</title>
 </head>
 <body>
-$END$
+    <h1>HTML basic tags (h1)</h1>
+    <h2>Let's check the headings (h2)</h2>
+    <h3>Deeper</h3>
+    <h4>Deeper</h4>
+    <h5>Deeper</h5>
+    <h6>More deep</h6>
+    <div>It's div and inside we have <span>span</span></div>
+    <p>
+          New paragraph that describes super fun story. What if we need a new line
+          inside this<br/>
+          story... Or some <b>bold</b> text or <i>italic</i>. Did you know that they
+          can have similar tags like <strong>strong</strong> or <em>em</em>.
+    </p>
+    <p>
+          How do you think, is it correct to put div inside p or it could cause
+          problems?
+    </p>
+    <p>
+          You can check it by
+          <a href="https://validator.w3.org/" target="_blank">w3 markup validation service</a>. Please, pay attention that this service is opened in a new tab by
+          default. How it may happen?
+    </p>
+    <div>
+          Also it would be a lot of fun to create an image with a link like this
+          one:
+        <div>
+            <a href="https://it-knights-fe.oa.r.appspot.com" title="IT Knights Club">
+            <img alt="This text is visible when an image is not visible" height="150" src="https://it-knights-fe.oa.r.appspot.com/static/media/logo2.87ecbb13.png" width="300"/>
+            </a>
+        </div>
+    </div>
+    <h2>
+          Lists are also important part of HTML. If you need to show some entities
+          that repeat, you should consider list tag
+    </h2>
+    <div>
+        <h3>Unordered list</h3>
+        <p>
+                Can be used if elements order is not important. List items don't have
+                numbers near with themselfs
+        </p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Ordered list</h3>
+        <p>
+                Here we have numbers, but be careful, not always such numbers looks
+                exactly like we wish, anyway, it's a part of css and for semantic it's
+                important to mark if the list is ordered or no
+        </p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+    </div>
+    <div>
+        <h3>Definitions list</h3>
+        <dl>
+        <dt>Term 1</dt>
+        <dd>Some definition of Term 1</dd>
+        <dt>Term 2</dt>
+        <dd>Some definition of Term 2</dd>
+        </dl>
+    </div>
+    <q>Sometimes it's useful to know how to make a quoted text :)</q>
+    <h3>And finalty forms</h3>
+    <p>It's a complex part, be carefult with it</p>
+    <form action="" method="GET">
+        <div>
+            <label>
+                      Input label is important part for any input
+                      <input name="required_input" required="" type="text" value=""/>
+            </label>
+        </div>
+        <div>
+            <textarea cols="30" name="textarea" rows="10">Textarea</textarea>
+        </div>
+        <div>
+            <select value="key2">
+                <option value="key1">option1</option>
+                <option value="key2">option2</option>
+                <option value="key3">option3</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                      Let's have the checkbox
+                      <input type="checkbox"/>
+            </label>
+        </div>
+        <div>
+                    Let's have the radio (that switches between each other and text is
+                    clickable, not just radio circle)
+                    <label><input name="sex" type="radio" value="male"/> Male </label>
+            <label><input name="sex" type="radio" value="female"/> Female </label>
+            <label><input name="sex" type="radio" value="other"/> Other </label>
+        </div>
+        <br/>
+        <div>
+            <button>Button submit</button>
+            <input type="submit" value="Input submit"/>
+            <p>
+                      Please, pay attention to what happens when you submit a form (check
+                      URL address).
+            </p>
+        </div>
+    </form>
+    <hr/>
+    <div>
+              And let's mention tags that you should use to accomplish this task:
+        <ul>
+            <li>HTML &lt;!DOCTYPE&gt; Declaration</li>
+            <li>html</li>
+            <li>head</li>
+            <li>meta - charset and viewport</li>
+            <li>title</li>
+            <li>body</li>
+            <li>h1, h2, ... , h6</li>
+            <li>div and span</li>
+            <li>p, i, b, q, strong, em, br, hr</li>
+            <li>a</li>
+            <li>img</li>
+            <li>ul, ol, li</li>
+            <li>dl, dt, dd</li>
+            <li>form, input, textarea, select, option, button</li>
+        </ul>
+    </div>
 </body>
 </html>
