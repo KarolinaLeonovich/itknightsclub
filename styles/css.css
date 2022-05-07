@@ -1,0 +1,26 @@
+body {
+  margin: 5%;
+  background-color: black;
+  color: DarkGreen;
+  font-family: Lucida Console, Monospace;
+  font-size: 100%
+}
+div {
+  box-sizing: border-box;
+  margin: 5%;
+  width: 30%;
+  font-size: 20px;
+  padding: 50px;
+  border: 10px dashed white;
+}
+p {
+  box-sizing: content-box;
+  margin: 15%;
+  width: 30%;
+  background-color: DarkGreen;
+  color: white;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
