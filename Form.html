@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+  .text-field {
+    margin: 20px;
+  }
+  label {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .text-field__icon {
+    position: relative;
+  }
+  .text-field__icon::before {
+    content: '';
+    color: #bdbdbd;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .text-field__icon .text-field__input {
+    padding-left: 2rem;
+  }
+  .text-field__icon_email::before {
+    content: '⍜';
+    font-size: 25px;
+  }
+  .text-field__icon_search::before {
+    content: '⍌';
+    font-size: 28px;
+    font-stretch: expanded;
+  }
+  .text-field__input {
+    width: 413px;
+    height: 55px;
+    border-radius: 10px;
+    margin-top: 7px;
+  }
+  #message {
+    width: 443px;
+    height: 170px;
+  }
+  input[type='submit'] {
+    position: relative;
+    width: 100px;
+    margin-left: 280px;
+  }
+    </style>
 </head>
 <body>
-$END$
+  <form action="/action_page.php">
+    <div class="text-field">
+      <label class="text-field__label" for="text">Your Name</label>
+      <div class="text-field__icon text-field__icon_email">
+        <input class="text-field__input" type="text">
+      </div>
+    </div>
+    <div class="text-field">
+      <label class="text-field__label" for="email">Mail</label>
+      <div class="text-field__icon text-field__icon_search">
+        <input class="text-field__input" type="email">
+      </div>
+    </div>
+    <div class="text-field">
+      <label for="message">Message</label><br>
+      <input type="text" class="text-field__input" id="message" name="message" value="Message"><br><br>
+      <input type="submit" class="submit" value="Send message">
+    </div>
+
+  </form>
 </body>
 </html>
